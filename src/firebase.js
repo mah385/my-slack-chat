@@ -18,11 +18,3 @@ firebase.initializeApp(firebaseConfig);
 // firebase.analytics();
 
 export default firebase;
-
-/*service firebase.storage {
-  match /b/{bucket}/o {
-  match /{allPaths=**} {
-    allow read, write: if request.auth != null;
-  }
-}
-}*/

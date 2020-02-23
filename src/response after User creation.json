@@ -1,0 +1,40 @@
+{
+  "user": {
+    "uid": "fGSQjE6nyHh0M5EkBt7reJnDZ9K2",
+    "displayName": null,
+    "photoURL": null,
+    "email": "mdarifhussain385@gmail.com",
+    "emailVerified": false,
+    "phoneNumber": null,
+    "isAnonymous": false,
+    "tenantId": null,
+    "providerData": [
+      {
+        "uid": "mdarifhussain385@gmail.com",
+        "displayName": null,
+        "photoURL": null,
+        "email": "mdarifhussain385@gmail.com",
+        "phoneNumber": null,
+        "providerId": "password"
+      }
+    ],
+    "apiKey": "AIzaSyAnGoGWHw4g5t0Ebufuh2fTFCAXhfA8MsY",
+    "appName": "[DEFAULT]",
+    "authDomain": "my-react-slack-chat.firebaseapp.com",
+    "stsTokenManager": {
+      "apiKey": "AIzaSyAnGoGWHw4g5t0Ebufuh2fTFCAXhfA8MsY",
+      "refreshToken": "AEu4IL22EGbUoNY3FGL7mwabOkI8BHbORj7RipCVK9Qh-WuELX-4gDwRbDX0jAPl6ELHlSwnGZm75ySnb3uQQa7NDfcZ1zt3OOQX9AVGsXhjKXQT2tPE6yIOnBOvi1HjIUIHfzuR_fhz567j6a0WXUvEh6EyFHpxu890A9KZCRfKf3hRioP3AlzRFGEIbECVCt-wqZbnS-9x4Aesp32wg8sAQvugB8iE2n3nyTZt2L_SBqZECeOgkkE",
+      "accessToken": "eyJhbGciOiJSUzI1NiIsImtpZCI6ImNiOGUwZDk3Mjg2MWIwNGJlN2RjNzVhMWIzYmUzYjIyOWIyNWYyMDUiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJodHRwczovL3NlY3VyZXRva2VuLmdvb2dsZS5jb20vbXktcmVhY3Qtc2xhY2stY2hhdCIsImF1ZCI6Im15LXJlYWN0LXNsYWNrLWNoYXQiLCJhdXRoX3RpbWUiOjE1ODI0Nzc2NzksInVzZXJfaWQiOiJmR1NRakU2bnlIaDBNNUVrQnQ3cmVKbkRaOUsyIiwic3ViIjoiZkdTUWpFNm55SGgwTTVFa0J0N3JlSm5EWjlLMiIsImlhdCI6MTU4MjQ3NzY3OSwiZXhwIjoxNTgyNDgxMjc5LCJlbWFpbCI6Im1kYXJpZmh1c3NhaW4zODVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOmZhbHNlLCJmaXJlYmFzZSI6eyJpZGVudGl0aWVzIjp7ImVtYWlsIjpbIm1kYXJpZmh1c3NhaW4zODVAZ21haWwuY29tIl19LCJzaWduX2luX3Byb3ZpZGVyIjoicGFzc3dvcmQifX0.M68rhsF_jYioYyIJ_p2qFeOvg-2KXPQu5Gs-xNqzrhbCKrSFCQImqB7TCos8MDNqXixwzU-NBQJeczdUiDFVw4yzdaKduD7zXPyTu_hHyEo60kOJlMK7BVntKTRDg3VGYlE6gejm2pOsqDaXUj-S9RiK4iWsG6hp0AB9Ncu5CtVePJZRp8jD9Ehw6_AAsrP9kW70Oji6yoW7-6iov7pDwwhCg5Ee-T9KpvByJxDaWuNbDAQVvabzbTFKHWg2xyEczoncbX41PwIfQ8BPGtAyidqiDKWBnOclqEuqpNJ5A19tt7aU53o1OYI893W4l0cFrjhx0AD-culnafa5qD7Btg",
+      "expirationTime": 1582481279095
+    },
+    "redirectEventId": null,
+    "lastLoginAt": "1582477678854",
+    "createdAt": "1582477678854"
+  },
+  "credential": null,
+  "additionalUserInfo": {
+    "providerId": "password",
+    "isNewUser": true
+  },
+  "operationType": "signIn"
+}
