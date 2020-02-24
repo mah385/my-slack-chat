@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="db4c2449-4b12-4b5e-9952-d1d39c23e29a" name="Default Changelist" comment="" />
+    <list default="true" id="db4c2449-4b12-4b5e-9952-d1d39c23e29a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Auth/Register.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Auth/Register.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +82,7 @@
       <workItem from="1582398210366" duration="27000" />
       <workItem from="1582398815609" duration="7027000" />
       <workItem from="1582476489250" duration="8757000" />
+      <workItem from="1582567776616" duration="2051000" />
     </task>
     <task id="LOCAL-00001" summary="added form validation, displayed validation error messages and added business logic for creating user in firebase">
       <created>1582485648309</created>
@@ -112,22 +118,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="442" y="211" key="EditFileWatcherDialog/0.0.1536.824@0.0.1536.824" timestamp="1582399141003" />
-    <state width="745" height="210" key="GridCell.Tab.0.bottom" timestamp="1582485742345">
+    <state width="746" height="212" key="GridCell.Tab.0.bottom" timestamp="1582568996478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582485742345" />
-    <state width="745" height="210" key="GridCell.Tab.0.center" timestamp="1582485742345">
+    <state width="746" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1582568996478" />
+    <state width="746" height="212" key="GridCell.Tab.0.center" timestamp="1582568996477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582485742345" />
-    <state width="745" height="210" key="GridCell.Tab.0.left" timestamp="1582485742344">
+    <state width="746" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1582568996477" />
+    <state width="746" height="212" key="GridCell.Tab.0.left" timestamp="1582568996477">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582485742344" />
-    <state width="745" height="210" key="GridCell.Tab.0.right" timestamp="1582485742345">
+    <state width="746" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1582568996477" />
+    <state width="746" height="212" key="GridCell.Tab.0.right" timestamp="1582568996478">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="745" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582485742345" />
+    <state width="746" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1582568996478" />
     <state x="279" y="57" key="SettingsEditor" timestamp="1582476612772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

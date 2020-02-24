@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import md5 from "md5";
 import firebase from "../../firebase";
 
 import {
@@ -77,7 +78,25 @@ class Register extends Component {
         .createUserWithEmailAndPassword(this.state.email, this.state.password)
         .then(createdUser => {
           console.log(JSON.stringify(createdUser, null, 2));
-          this.setState({ loading: false });
+          createdUser.user
+            .updateProfile({
+              displayName: this.state.username,
+              photoURL: `http://gravtor.com/avator/${md5(
+                createdUser.user.email
+              )}?d=identicon`
+            })
+            .then(() => {
+              this.saveUser(createdUser).then(() => {
+                console.log("User Saved");
+              });
+              this.setState({ loading: false });
+            })
+            .catch(error => {
+              this.setState({
+                errors: this.state.errors.concat(error),
+                loading: false
+              });
+            });
         })
         .catch(error => {
           console.log(JSON.stringify(error, null, 2));
