@@ -12,6 +12,7 @@ import {
   Message,
   Icon
 } from "semantic-ui-react";
+
 class Register extends Component {
   state = {
     username: "",
@@ -19,12 +20,13 @@ class Register extends Component {
     password: "",
     passwordConfirmation: "",
     errors: [],
-    loading: false
+    loading: false,
+    usersRef: firebase.database().ref("users")
   };
 
   handleOnChange = event => {
     this.setState({ [event.target.name]: event.target.value });
-    console.log(JSON.stringify(this.state, null, 2));
+    // console.log(JSON.stringify(this.state, null, 2));
   };
 
   isFormEmpty = ({ username, email, password, passwordConfirmation }) => {
@@ -70,9 +72,9 @@ class Register extends Component {
   };
 
   handleSubmit = event => {
+    event.preventDefault();
     if (this.isFormValid()) {
       this.setState({ errors: [], loading: true });
-      event.preventDefault();
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.state.email, this.state.password)
@@ -108,6 +110,13 @@ class Register extends Component {
     }
   };
 
+  saveUser = createdUser => {
+    return this.state.usersRef.child(createdUser.user.uid).set({
+      name: createdUser.user.displayName,
+      avatar: createdUser.user.photoURL
+    });
+  };
+
   handleInputError = (errors, inputName) => {
     return errors.some(error => {
       return error.message.toLowerCase().includes(inputName);
@@ -122,7 +131,7 @@ class Register extends Component {
     return (
       <Grid textAlign={"center"} verticalAlign={"middle"} className={"app"}>
         <Grid.Column style={{ maxWidth: 450 }}>
-          <Header as={"h2"} icon color={"green"} textAlign={"center"}>
+          <Header as={"h1"} icon color={"green"} textAlign={"center"}>
             <Icon name={"chat"} color={"green"} />
             Register For DevChat
           </Header>
