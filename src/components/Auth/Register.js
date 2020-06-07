@@ -10,7 +10,7 @@ import {
   Button,
   Header,
   Message,
-  Icon
+  Icon,
 } from "semantic-ui-react";
 
 class Register extends Component {
@@ -21,10 +21,10 @@ class Register extends Component {
     passwordConfirmation: "",
     errors: [],
     loading: false,
-    usersRef: firebase.database().ref("users")
+    usersRef: firebase.database().ref("users"),
   };
 
-  handleOnChange = event => {
+  handleOnChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
     // console.log(JSON.stringify(this.state, null, 2));
   };
@@ -65,27 +65,27 @@ class Register extends Component {
     }
   };
 
-  displayErrors = errors => {
+  displayErrors = (errors) => {
     return errors.map((error, index) => {
       return <p key={index}>{error.message}</p>;
     });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     if (this.isFormValid()) {
       this.setState({ errors: [], loading: true });
       firebase
         .auth()
         .createUserWithEmailAndPassword(this.state.email, this.state.password)
-        .then(createdUser => {
+        .then((createdUser) => {
           console.log(JSON.stringify(createdUser, null, 2));
           createdUser.user
             .updateProfile({
               displayName: this.state.username,
               photoURL: `http://gravtor.com/avator/${md5(
                 createdUser.user.email
-              )}?d=identicon`
+              )}?d=identicon`,
             })
             .then(() => {
               this.saveUser(createdUser).then(() => {
@@ -93,32 +93,32 @@ class Register extends Component {
               });
               this.setState({ loading: false });
             })
-            .catch(error => {
+            .catch((error) => {
               this.setState({
                 errors: this.state.errors.concat(error),
-                loading: false
+                loading: false,
               });
             });
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(JSON.stringify(error, null, 2));
           this.setState({
             errors: this.state.errors.concat(error),
-            loading: false
+            loading: false,
           });
         });
     }
   };
 
-  saveUser = createdUser => {
+  saveUser = (createdUser) => {
     return this.state.usersRef.child(createdUser.user.uid).set({
       name: createdUser.user.displayName,
-      avatar: createdUser.user.photoURL
+      avatar: createdUser.user.photoURL,
     });
   };
 
   handleInputError = (errors, inputName) => {
-    return errors.some(error => {
+    return errors.some((error) => {
       return error.message.toLowerCase().includes(inputName);
     })
       ? "error"

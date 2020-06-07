@@ -9,7 +9,7 @@ import {
   Header,
   Icon,
   Message,
-  Segment
+  Segment,
 } from "semantic-ui-react";
 
 class Login extends Component {
@@ -17,35 +17,35 @@ class Login extends Component {
     email: "",
     password: "",
     errors: [],
-    loading: false
+    loading: false,
   };
 
-  handleOnChange = event => {
+  handleOnChange = (event) => {
     this.setState({ [event.target.name]: event.target.value });
     // console.log(JSON.stringify(this.state, null, 2));
   };
 
-  displayErrors = errors => {
+  displayErrors = (errors) => {
     return errors.map((error, index) => {
       return <p key={index}>{error.message}</p>;
     });
   };
 
-  handleSubmit = event => {
+  handleSubmit = (event) => {
     event.preventDefault();
     if (this.isFormValid(this.state)) {
       this.setState({ errors: [], loading: true });
       firebase
         .auth()
         .signInWithEmailAndPassword(this.state.email, this.state.password)
-        .then(signedInUser => {
+        .then((signedInUser) => {
           console.log(signedInUser);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error);
           this.setState({
             errors: this.state.errors.concat(error),
-            loading: false
+            loading: false,
           });
         });
     }
@@ -56,7 +56,7 @@ class Login extends Component {
   };
 
   handleInputError = (errors, inputName) => {
-    return errors.some(error => {
+    return errors.some((error) => {
       return error.message.toLowerCase().includes(inputName);
     })
       ? "error"
